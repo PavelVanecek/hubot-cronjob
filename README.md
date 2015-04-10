@@ -14,11 +14,12 @@ An example that fetches restaurant menu every workday at 11am
     module.exports = (robot) ->
       # monday to friday, 11am
       pattern = '0 11 * * 1-5'
+      timezone = 'Europe/Prague'
       fn = fetchRestaurantMenu (err, menu) ->
         if err
           return console.error err
         robot.messageRoom 'lunchroom', menu
-      new HubotCron pattern, fetchRestaurantMenu
+      new HubotCron pattern, timezone, fetchRestaurantMenu
 
 ## How to install
 

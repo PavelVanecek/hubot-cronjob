@@ -7,7 +7,7 @@
 
 class HubotCron
 
-  constructor: (@pattern, @fn, @context = global) ->
+  constructor: (@pattern, @timezone, @fn, @context = global) ->
     @cronjob = new CronJob(
       @pattern
       @onTick.bind(this)
