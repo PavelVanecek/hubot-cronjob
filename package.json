@@ -1,0 +1,23 @@
+{
+  "name": "hubot-cronjob",
+  "version": "0.0.1",
+  "description": "Hubot scriptable cron job",
+  "main": "./src/cronjob.coffee",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PavelVanecek/hubot-cronjob.git"
+  },
+  "keywords": [
+    "hubot",
+    "cron"
+  ],
+  "author": "Pavel Vanecek <pavel.vanecek@merck.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PavelVanecek/hubot-cronjob/issues"
+  },
+  "homepage": "https://github.com/PavelVanecek/hubot-cronjob",
+  "dependencies": {
+    "cron": "^1.0.9"
+  }
+}
