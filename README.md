@@ -15,11 +15,11 @@ An example that fetches restaurant menu every workday at 11am
       # monday to friday, 11am
       pattern = '0 11 * * 1-5'
       timezone = 'Europe/Prague'
-      fn = fetchRestaurantMenu (err, menu) ->
+      fn = fetchRestaurantMenu.bind null, (err, menu) ->
         if err
           return console.error err
         robot.messageRoom 'lunchroom', menu
-      new HubotCron pattern, timezone, fetchRestaurantMenu
+      new HubotCron pattern, timezone, fn
 
 ## How to install
 
