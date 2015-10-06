@@ -15,6 +15,8 @@ class HubotCron
       false
       @timezone
     )
+    if 'function' != typeof @fn
+      throw new Error "the third parameter must be a function, got (#{typeof @fn}) instead"
     @cronjob.start()
 
   stop: ->
