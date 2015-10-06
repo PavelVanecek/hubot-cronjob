@@ -1,6 +1,6 @@
 {
   "name": "hubot-cronjob",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Hubot scriptable cron job",
   "main": "./src/cronjob.coffee",
   "repository": {
