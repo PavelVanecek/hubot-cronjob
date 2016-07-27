@@ -1,0 +1,10 @@
+version: v1.5.2
+ignore:
+  'npm:minimatch:20160620':
+    - recursive-readdir > minimatch:
+        reason: None given
+        expires: '2016-07-31T10:53:32.992Z'
+    - snyk > recursive-readdir > minimatch:
+        reason: None given
+        expires: '2016-07-31T10:53:32.993Z'
+patch: {}
