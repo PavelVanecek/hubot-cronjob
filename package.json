@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/PavelVanecek/hubot-cronjob",
   "dependencies": {
-    "cron": "^1.1.0"
+    "cron": "^1.1.1"
   }
 }
